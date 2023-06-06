@@ -1,11 +1,13 @@
 import { type FC } from "react"
 import "./index.scss"
+import { type IBaseLayout } from "./interface"
 
-const BaseLayout: FC = () => {
+const BaseLayout: FC<IBaseLayout> = (props) => {
+
+    const { ...othersProps } = props
+
     return (
-        <section className="base-layout">
-            Hello
-        </section>
+        <section className="base-layout" {...othersProps} />
     )
 }
 

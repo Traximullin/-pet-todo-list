@@ -4,7 +4,9 @@ import { BaseLayout } from "shared/layout"
 
 const App: FC = () => {
     return (
-        <BaseLayout/>
+        <BaseLayout>
+            hello
+        </BaseLayout>
     )
 }
 
