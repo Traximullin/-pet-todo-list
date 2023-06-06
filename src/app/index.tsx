@@ -1,11 +1,11 @@
-import './index.scss';
+import { type FC } from "react"
+import "./index.scss"
+import { BaseLayout } from "shared/layout"
 
-function App() {
-  return (
-    <div className="App">
-      Hello
-    </div>
-  );
+const App: FC = () => {
+    return (
+        <BaseLayout/>
+    )
 }
 
-export default App;
+export default App
