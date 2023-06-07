@@ -1,0 +1,14 @@
+.textarea {
+    min-height: 50px;
+    width: 100%;
+    min-width: 100px;
+    
+    &[placeholder]:empty:before {
+        content: attr(placeholder);
+        color: #555; 
+    }
+    
+    &[placeholder]:empty:focus::before {
+        content: "";
+    }
+}
