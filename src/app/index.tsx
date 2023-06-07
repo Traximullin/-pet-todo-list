@@ -1,7 +1,7 @@
 import { type FC } from "react"
 import "./index.scss"
 import { BaseLayout } from "shared/layout"
-import { Input, List } from "shared/ui"
+import { Input, List, Textarea } from "shared/ui"
 import { TodoCard } from "entities/todo/ui"
 
 interface ITodo {
@@ -34,6 +34,7 @@ const App: FC = () => {
                     <TodoCard>{data.title}</TodoCard>
                 )}
             />
+            <Textarea placeholder="Новая задача..." />
         </BaseLayout>
     )
 }
