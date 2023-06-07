@@ -1,4 +1,12 @@
 
 .list {
-    
+    height: 100%;
+    &__no-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-weight: bold;
+        font-size: 24px;
+    }
 }
