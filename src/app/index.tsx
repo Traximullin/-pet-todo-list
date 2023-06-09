@@ -1,7 +1,7 @@
 import { type FC } from "react"
 import "./index.scss"
 import { BaseLayout } from "shared/layout"
-import { Input, List, Textarea } from "shared/ui"
+import { Button, Input, List, Textarea } from "shared/ui"
 import { TodoCard } from "entities/todo/ui"
 
 interface ITodo {
